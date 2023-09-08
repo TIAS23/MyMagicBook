@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.view.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/viewParent.headerText.NoMode"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Welcome\nMagic Book "
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:layout_width="354dp"
+        android:layout_height="410dp"
+        android:src="@drawable/bookTask" />
+
+    <TextView
+        android:id="@+id/tvForgetPasswd"
+        style="@style/viewParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="@dimen/dp_30"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Use Facebook to find your friends"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constrainButton_toButtonOf="parent"
+        app:layout_constrainLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/btnLetsGo"
+        android:layout_width="294dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/side_white_panel"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Log in with facebook"
+        android:drawableRight="@drawable/icons8_facebook_50"
+        app:layout_constrainButton_toButtonOf="parent"
+        app:layout_constrainLeft_toLeftOf="parent" />
+
+</LinearLayout>

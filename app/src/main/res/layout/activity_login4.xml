@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="-10dp"
+    android:gravity="center|top"
+    android:orientation="horizontal"
+    tools:context=".ui.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="-10dp"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="99dp"
+                android:layout_height="89dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginRight="155dp"
+                android:src="@drawable/bookTask" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:text="Magic Book "
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="-10dp"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="195dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginRight="113dp"
+                    android:src="@drawable/akun" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/viewParent.headerText.NoMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="116dp"
+                android:text="TIAS HAFIDZOTUL L\ntiasluthfiana@gmail.com "
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnsingup"
+            android:layout_width="360dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CONTINUE AS TIAS"
+            android:textAlignment="viewStart"
+            android:paddingStart="120dp"
+            app:layout_constrainButton_toButtonOf="parent"
+            app:layout_constrainLeft_toLeftOf="parent" />
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:text="Choose another account "
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

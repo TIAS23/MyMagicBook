@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="-10dp"
+    android:gravity="center|top"
+    android:orientation="horizontal"
+    tools:context=".ui.view.MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="-10dp"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="53dp"
+                android:layout_marginRight="100dp"
+                android:src="@drawable/bookTask" />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:text="Magic Book "
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tvSocialNet"
+            style="@style/viewParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_100"
+            android:layout_marginEnd="@dimen/dp_100"
+            android:fontFamily="@font/capriola"
+            android:text="Log in with social network"
+            android:textAlignment="center"
+            android:textColor="@color/darkPrimary"
+            android:textSize="17sp"
+            android:visibility="visible"
+            app:layout_constrainButton_toButtonOf="parent"
+            />
+
+
+        <LinearLayout
+            android:layout_width="411dp"
+            android:layout_height="-10dp"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <Button
+                android:id="@+id/btnLetsGo2"
+                android:layout_width="164dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/side_white_panel"
+                android:drawableRight="@drawable/icons8_google_50"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Google"
+                app:layout_constrainButton_toButtonOf="parent" />
+
+            <Button
+                android:id="@+id/btnLetsGo"
+                android:layout_width="160dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/side_white_panel"
+                android:drawableRight="@drawable/icons8_instagram_50"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Instagram"
+                app:layout_constrainButton_toButtonOf="parent"
+                app:layout_constrainLeft_toLeftOf="parent" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/viewParent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="@dimen/dp_100"
+            android:fontFamily="@font/capriola"
+            android:text="or sing up with email"
+            android:textAlignment="center"
+            android:textColor="@color/darkPrimary"
+            android:textSize="17sp"
+            android:visibility="visible"
+            app:layout_constrainButton_toButtonOf="parent" />
+
+        <Button
+            android:id="@+id/btnsingup"
+            android:layout_width="360dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/white"
+            android:drawableRight="@drawable/email"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sing Up"
+            android:textAlignment="viewStart"
+            android:paddingStart="16dp"
+            app:layout_constrainButton_toButtonOf="parent"
+            app:layout_constrainLeft_toLeftOf="parent" />
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:text="Login with email"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
